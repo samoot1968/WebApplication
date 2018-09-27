@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using WebApplication.Data;
-using WebApplication.Models;
+using WebApplication.Type;
 
 [assembly: HostingStartup(typeof(WebApplication.Areas.Identity.IdentityHostingStartup))]
 namespace WebApplication.Areas.Identity
@@ -16,8 +16,7 @@ namespace WebApplication.Areas.Identity
         public void Configure(IWebHostBuilder builder)
         {
             builder.ConfigureServices((context, services) => {
-                services.AddDefaultIdentity<User>()
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+
             });
         }
     }

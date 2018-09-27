@@ -5,9 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using WebApplication.Areas.Revenue.Models;
 
-namespace WebApplication.Models
+namespace WebApplication.Type
 {
-    public class User :IdentityUser
+    public class User : IdentityUser
     {
         public ICollection<Salary> salary { get; set; }
     }

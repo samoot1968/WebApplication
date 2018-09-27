@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WebApplication.Areas.Revenue.Models;
-using WebApplication.Models;
+using WebApplication.Type;
 
 namespace WebApplication.Data
 {
