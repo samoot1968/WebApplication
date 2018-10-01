@@ -4,5 +4,15 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+@model IEnumerable<WebApplication.Areas.Revenue.Models.Salary>
+
 <h2>Revenue</h2>
 
+
+
+@foreach (var item in Model)
+{
+    <h1>@item.Id</h1>
+    <h1>@item.Name</h1>
+    <h1>@item.Amount</h1>
+}
